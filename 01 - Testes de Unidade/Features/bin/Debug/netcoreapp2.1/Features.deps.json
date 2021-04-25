@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "0a0da0037f5cdd7ba611e465dec9a8fe438dbadd"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Features/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "9.5.3",
+          "MediatR": "7.0.0"
+        },
+        "runtime": {
+          "Features.dll": {}
+        }
+      },
+      "FluentValidation/9.5.3": {
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.5.3.0"
+          }
+        }
+      },
+      "MediatR/7.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Features/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/9.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BataCga/cwQUeo9yy8dzDnihx3N5l1+wj6kEQOkdQ5FIsSFcWD/UjdPJ2jNKODSPAtYuDH5KLM5IBrr1UCNf/A==",
+      "path": "fluentvalidation/9.5.3",
+      "hashPath": "fluentvalidation.9.5.3.nupkg.sha512"
+    },
+    "MediatR/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sgfHxkBsmMlHOD564SnLqTvSbAuGlFiZfc6ybxBSI1wYV/2u+Y5TXtFoIhCISFg5/s/6aMvB338QC2JseHsjTA==",
+      "path": "mediatr/7.0.0",
+      "hashPath": "mediatr.7.0.0.nupkg.sha512"
+    }
+  }
+}

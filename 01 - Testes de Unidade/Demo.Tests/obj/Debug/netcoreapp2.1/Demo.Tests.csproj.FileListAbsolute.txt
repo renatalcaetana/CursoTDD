@@ -1,0 +1,17 @@
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\Demo.Tests.deps.json
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\Demo.Tests.runtimeconfig.json
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\Demo.Tests.runtimeconfig.dev.json
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\Demo.Tests.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\Demo.Tests.pdb
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\Demo.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\bin\Debug\netcoreapp2.1\Demo.pdb
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\obj\Debug\netcoreapp2.1\Demo.Tests.csprojAssemblyReference.cache
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\obj\Debug\netcoreapp2.1\Demo.Tests.csproj.CoreCompileInputs.cache
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\obj\Debug\netcoreapp2.1\Demo.Tests.AssemblyInfoInputs.cache
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\obj\Debug\netcoreapp2.1\Demo.Tests.AssemblyInfo.cs
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\obj\Debug\netcoreapp2.1\Demo.Tests.csproj.CopyComplete
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\obj\Debug\netcoreapp2.1\Demo.Tests.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo.Tests\obj\Debug\netcoreapp2.1\Demo.Tests.pdb

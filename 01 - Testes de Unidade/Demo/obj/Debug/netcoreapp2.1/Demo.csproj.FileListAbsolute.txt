@@ -1,0 +1,9 @@
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo\bin\Debug\netcoreapp2.1\Demo.deps.json
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo\bin\Debug\netcoreapp2.1\Demo.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo\bin\Debug\netcoreapp2.1\Demo.pdb
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo\obj\Debug\netcoreapp2.1\Demo.csproj.CoreCompileInputs.cache
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo\obj\Debug\netcoreapp2.1\Demo.AssemblyInfoInputs.cache
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo\obj\Debug\netcoreapp2.1\Demo.AssemblyInfo.cs
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo\obj\Debug\netcoreapp2.1\Demo.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo\obj\Debug\netcoreapp2.1\Demo.pdb
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Demo\obj\Debug\netcoreapp2.1\Demo.csprojAssemblyReference.cache

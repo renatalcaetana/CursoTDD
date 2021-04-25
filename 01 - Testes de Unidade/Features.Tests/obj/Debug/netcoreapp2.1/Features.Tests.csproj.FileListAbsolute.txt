@@ -1,0 +1,17 @@
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\Features.Tests.deps.json
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\Features.Tests.runtimeconfig.json
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\Features.Tests.runtimeconfig.dev.json
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\Features.Tests.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\Features.Tests.pdb
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\Features.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\bin\Debug\netcoreapp2.1\Features.pdb
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\obj\Debug\netcoreapp2.1\Features.Tests.csprojAssemblyReference.cache
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\obj\Debug\netcoreapp2.1\Features.Tests.csproj.CoreCompileInputs.cache
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\obj\Debug\netcoreapp2.1\Features.Tests.AssemblyInfoInputs.cache
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\obj\Debug\netcoreapp2.1\Features.Tests.AssemblyInfo.cs
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\obj\Debug\netcoreapp2.1\Features.Tests.csproj.CopyComplete
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\obj\Debug\netcoreapp2.1\Features.Tests.dll
+C:\Cursos\TDD Eduardo Pires\01 - Testes de Unidade\Features.Tests\obj\Debug\netcoreapp2.1\Features.Tests.pdb
