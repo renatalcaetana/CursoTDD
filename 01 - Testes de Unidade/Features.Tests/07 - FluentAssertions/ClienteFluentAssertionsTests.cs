@@ -8,13 +8,15 @@ namespace Features.Tests
     public class ClienteFluentAssertionsTests
     {
         private readonly ClienteTestsAutoMockerFixture _clienteTestsFixture;
-        readonly ITestOutputHelper _outputHelper;
+        private readonly ITestOutputHelper _testOutputHelper;
+               
 
         public ClienteFluentAssertionsTests(ClienteTestsAutoMockerFixture clienteTestsFixture,
-                                            ITestOutputHelper outputHelper)
+                                           ITestOutputHelper testOutputHelper)
         {
             _clienteTestsFixture = clienteTestsFixture;
-            _outputHelper = outputHelper;
+            _testOutputHelper = testOutputHelper;
+
         }
 
 
@@ -56,7 +58,10 @@ namespace Features.Tests
             result.Should().BeFalse();
             cliente.ValidationResult.Errors.Should().HaveCountGreaterOrEqualTo(1, "deve possuir erros de validação");
 
-            _outputHelper.WriteLine($"Foram encontrados {cliente.ValidationResult.Errors.Count} erros nesta validação");
+
+            _testOutputHelper.WriteLine($"foram encontrados {cliente.ValidationResult.Errors.Count} erros nesta validação");
+                       
+           // _outputHelper.WriteLine($"Foram encontrados {cliente.ValidationResult.Errors.Count} erros nesta validação");
         }
     }
 }
