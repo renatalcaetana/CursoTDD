@@ -1,0 +1,12 @@
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\bin\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.deps.json
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\bin\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.dll
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\bin\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.pdb
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\obj\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.csprojAssemblyReference.cache
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\obj\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.csproj.CoreCompileInputs.cache
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\obj\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.AssemblyInfoInputs.cache
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\obj\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.AssemblyInfo.cs
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\obj\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.dll
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\obj\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.pdb
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\bin\Debug\netcoreapp2.1\NerdStore.Core.dll
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\bin\Debug\netcoreapp2.1\NerdStore.Core.pdb
+C:\Cursos\TDD Eduardo Pires\NerdStore.Vendas.Domain\obj\Debug\netcoreapp2.1\NerdStore.Vendas.Domain.csproj.CopyComplete
