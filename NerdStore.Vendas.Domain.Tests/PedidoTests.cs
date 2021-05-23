@@ -8,7 +8,7 @@ namespace NerdStore.Vendas.Domain.Tests
     public class PedidoTests
     {
         [Fact(DisplayName = "Adicionar item novo pedido")]
-        [Trait("Categoria", "Pedido Testes")]
+        [Trait("Categoria", "Vendas - Pedido")]
         public void AdicionarItemPedido_NovoPedido_DeveAtualizarValor()
         {
             // Arrange
@@ -25,7 +25,7 @@ namespace NerdStore.Vendas.Domain.Tests
         }
 
         [Fact(DisplayName = "Adicionar item pedido existente")]
-        [Trait("Categoria", "Pedido Testes")]
+        [Trait("Categoria", "Vendas - Pedido")]
         public void Trocar_Nome_Metodo()
         {
             // Arrange
@@ -45,7 +45,7 @@ namespace NerdStore.Vendas.Domain.Tests
 
         }
         [Fact(DisplayName = "Adicionar item pedido acima do permitido")]
-        [Trait("Categoria", "Pedido Tests")]
+        [Trait("Categoria", "Vendas - Pedido")]
         public void AdicionaiItemPedido_ItemAcimadoPermitido_DeveRetornarException()
         {
             // Arrange
@@ -57,6 +57,22 @@ namespace NerdStore.Vendas.Domain.Tests
             Assert.Throws<DomainException>(() => pedido.AdicionarItem(pedidoItem));
        
         }
-       
+        [Fact(DisplayName = "Adicionar item fora da quantidade permitida")]
+        [Trait("Categoria", "Vendas - Pedido")]
+        public void AdicionarItemPedido_ForadaQuantidadePermitida_DeveRetornarException()
+        {
+            // Arrange
+            var pedido = Pedido.PedidoFactory.NovoPedidoRascunho(Guid.NewGuid());
+            var produtoId = Guid.NewGuid();
+            var pedidoItem = new PedidoItem(produtoId, "Chocolote", 1, 100);
+            var pedidoItem2 = new PedidoItem(produtoId, "Chocolote", Pedido.Max_UNIDADES_ITEM + 1, 100);
+
+
+            // Act & Assert
+            Assert.Throws<DomainException>(() => pedido.AdicionarItem(pedidoItem2));
+
+            // Assert
+
+        }
     }
 }
