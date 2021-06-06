@@ -1,9 +1,7 @@
 ﻿using NerdStore.Core.DomainObjects;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 
 namespace NerdStore.Vendas.Domain
 {
@@ -66,6 +64,22 @@ namespace NerdStore.Vendas.Domain
             _pedidoItems.Add(pedidoItem);
             CalcularValor();
 
+        }
+        private void ValidarItemPedidoInexistente(PedidoItem pedidoItem)
+        {
+            if (!ExisteItemPedido(pedidoItem))
+            {
+               throw new DomainException("Pedido inexistente!");
+            }
+        }
+
+        public void RemoverItem(PedidoItem pedidoItem)
+        {
+            ValidarItemPedidoInexistente(pedidoItem);
+
+            _pedidoItems.Remove(pedidoItem);
+
+            CalcularValor();
         }
 
         public void TornarRascunho()
