@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
+using NerdStore.Vendas.Domain;
 
 namespace NerdStore.Vendas.Domain.Tests
 {
-   public class VoucherTests
+    public class VoucherTests
     {
 
         [Fact(DisplayName = "Validar voucher tipo valor valido")]
@@ -13,16 +14,7 @@ namespace NerdStore.Vendas.Domain.Tests
         public void Voucher_ValidarVoucherTipoValor_DeveEstarValido()
         {
             // Arrange
-            var voucher = new Voucher
-            {
-                Codigo = "Promocão",
-                ValorDesconto = 15,
-                PercentualDesconto = null,
-                Quantidade = 1,
-                DataValidade = null,
-                Ativo = true,
-                Utilizado = false
-            };
+            var voucher = new Voucher("Promocão",15, TipoDescontoVoucher.Porcentagem, 1, 1, DateTime.Now.AddDays(-1), true, false);
 
             // Act
             var resultado = voucher.ValidarSeAplicavel();

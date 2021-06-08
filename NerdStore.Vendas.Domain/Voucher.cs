@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using FluentValidation;
+using FluentValidation.Results;
 
 namespace NerdStore.Vendas.Domain
 {
@@ -16,7 +16,10 @@ namespace NerdStore.Vendas.Domain
         public bool Ativo { get; private set; }
         public bool Utilizado { get; private set; }
 
-        public bool ValidarSeAplicavel() => true;
+        public ValidationResult ValidarSeAplicavel()
+        {
+            return new VoucherAplicavelValidation().Validate(this);
+        }
 
         public Voucher(string codigo, decimal valorDesconto, TipoDescontoVoucher tipoDescontoVoucher, decimal porcentalDesconto, int quantidade, DateTime dataValidade, bool ativo, bool utilizado)
         {
@@ -29,6 +32,70 @@ namespace NerdStore.Vendas.Domain
             Ativo = ativo;
             Utilizado = utilizado;
 
+        }
+    }
+    public class VoucherAplicavelValidation : AbstractValidator<Voucher>
+    {
+        public static string CodigoErroMsg => "Voucher sem codigo valido";
+
+        public static string DetalheValidade => "Voucher está expirado";
+
+        public static string AtivoErroMsg => "Esse voucher não é mais válido";
+
+        public static string UtilizadoErroMsg => "Este voucher já foi utlizado";
+
+        public static string QuantidadeErroMg => "Este voucher nao está mais disponível";
+
+        public static string ValorDescontoErroMsg => "O valor de desconto precisa ser superior a 0";
+
+        public static string PercentualDescontoErroMsg => "O valor da porcentagme de desconto precisa ser superior a X";
+
+        public VoucherAplicavelValidation()
+        {
+            RuleFor(c => c.Codigo)
+                .NotEmpty()
+                .WithMessage(CodigoErroMsg);
+
+            RuleFor(c => c.DataValidade)
+                .Must(DataVencimentoSuperiorAtual)
+                .WithMessage(DetalheValidade);
+
+            RuleFor(c => c.Ativo)
+                .Equal(true)
+                .WithMessage(AtivoErroMsg);
+
+            RuleFor(c=>c.Utilizado)
+                .Equal(false)
+                .WithMessage(UtilizadoErroMsg);
+
+            RuleFor(c => c.Quantidade)
+                .GreaterThan(0)
+                .WithMessage(QuantidadeErroMg);
+
+            When(f => f.TipoDescontoVoucher == TipoDescontoVoucher.Valor,  () =>
+              {
+                  RuleFor(f => f.ValorDesconto)
+                  .NotNull()
+                  .WithMessage(ValorDescontoErroMsg)
+                  .GreaterThan(1)
+                  .WithMessage(ValorDescontoErroMsg);
+              });
+
+            When(f => f.TipoDescontoVoucher == TipoDescontoVoucher.Porcentagem, () =>
+            {
+                RuleFor(f => f.ValorDesconto)
+                .NotNull()
+                .WithMessage(PercentualDescontoErroMsg)
+                .GreaterThan(0)
+                .WithMessage(PercentualDescontoErroMsg);
+            });
+
+
+        }
+
+        protected static bool DataVencimentoSuperiorAtual(DateTime? dataValidade)
+        {
+            return dataValidade >= DateTime.Now;
         }
     }
     public enum TipoDescontoVoucher
